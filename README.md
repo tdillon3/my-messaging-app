@@ -4,7 +4,7 @@
 
 The purpose of this project is to deepen my understanding of real-time data handling, user authentication, and modern web app development practices.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.loom.com/share/4423162362754a41aa96e8f380986ff1?sid=007bf22f-1ca1-4a1d-8d87-7098df0c036b)
 
 ## Getting Started with Create React App
 
