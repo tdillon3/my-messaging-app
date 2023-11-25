@@ -1,38 +1,123 @@
 .App {
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appDescription {
+  flex-basis: 50%;
 }
+
+.appDescription h1 {
+  margin-bottom: 10px;
+}
+
+.appDescription p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.appLogo {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px;
+}
+
+.signInContainer {
+  flex-basis: 40%;
+}
+
+.emailInput, .passwordInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.signInButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signInButton:hover {
+  background-color: #45a049;
+}
+
+/* Header styles removed if not needed */
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Chat message area styles */
+.MessageList {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  max-width: 600px;
+  height: 300px;
+  overflow-y: auto; /* Enables scrolling for overflow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Individual message styles */
+.MessageList p {
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  padding: 8px;
 }
+
+/* Chat input area styles */
+.ChatInput {
+  margin-top: 20px;
+}
+
+/* Input field styles */
+.ChatInput input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Send button styles */
+.ChatInput button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ChatInput button:hover {
+  background-color: #45a049;
+}
+
+/* If there are specific styles for links or other elements, you can add them here */
